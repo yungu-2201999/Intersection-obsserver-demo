@@ -1,8 +1,8 @@
 const ob = new IntersectionObserver((entries) => {
-  // 交叉改变后运行
+  // 循环所有被监听的元素，判断是否进入可视区域
   for (const entry of entries) {
     if(entry.isIntersecting){
-      console.log("交叉")
+      // 进入视口了就替换src
       const img = entry.target;
       img.src= img.dataset.src;
       ob.unobserve(img); // 停止观察
