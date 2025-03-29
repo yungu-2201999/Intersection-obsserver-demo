@@ -1,0 +1,19 @@
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  inline-size: 1300px;
+  margin: 0 auto;
+}
+
+.item {
+  margin-block-start: 20px;
+  inline-size: 300px;
+  aspect-ratio: 2/3;
+}
+
+img {
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+}
