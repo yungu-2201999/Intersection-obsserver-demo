@@ -1,0 +1,40 @@
+.wrapper {
+  column-count: 4;
+  column-gap: 10px;
+
+  counter-reset: count;
+  inline-size: 960px;
+  margin: 0 auto;
+}
+
+.wrapper>li {
+  width: 200px;
+  height: 300px;
+  list-style: none;
+  position: relative;
+  margin-block-end: 10px;
+}
+
+img {
+  width: 100%;
+  aspect-ratio: 2/3;
+}
+
+.load-more {
+  width: 50px;
+  height: 50px;
+  margin: 50px auto;
+  border: 2px dashed #000;
+  border-radius: 100%;
+  animation: loading 400ms linear infinite;
+}
+
+@keyframes loading {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
